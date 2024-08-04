@@ -1,7 +1,6 @@
 <script setup lang="ts">
 const { isDesktop } = useDevice(); 
 </script>
-
 <template>
 
   <Body>
