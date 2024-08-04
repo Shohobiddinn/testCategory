@@ -1,6 +1,12 @@
+<script setup lang="ts">
+const { isDesktop } = useDevice(); 
+</script>
+
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+
+  <Body>
+    <NuxtLayout :name="isDesktop ? 'desktop' : 'mobile'">
+      <NuxtPage />
+    </NuxtLayout>
+  </Body>
 </template>
